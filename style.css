@@ -1,0 +1,265 @@
+:root{
+    --Strongcyan: hsl(172, 67%, 45%);
+--Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Grayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Verylightgrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(font/Space_Mono/SpaceMono-Bold.ttf);
+}
+@font-face {
+    font-family: 'BoldItalic';
+    src: url(font/Space_Mono/SpaceMono-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Italic';
+    src: url(font/Space_Mono/SpaceMono-Italic.ttf);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(font/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bold' , 'BoldItalic', 'Italic','Regular';
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Lightgrayishcyan);
+}
+body header{
+    text-align: center;
+   width: 30px;
+ margin: 30px 130px;
+
+}
+body header h1{
+    color: var(--Darkgrayishcyan);
+    letter-spacing: 8px;
+ 
+}
+body main{
+    background-color: var(--White);
+    height: 100vh;
+    border-top-right-radius:  20px;
+    border-top-left-radius:  20px;
+padding: 30px;
+}
+body main .left .top-card{
+    position: relative;
+}
+body main .left label {
+  display: block;
+color: var(--Darkgrayishcyan); 
+margin-bottom: 10px;
+
+}
+body main input{
+    background-color: var(--Verylightgrayishcyan);
+border-style: none;
+width: 100%;
+border-radius: 3px;
+direction:rtl;
+padding: 9px;
+margin-bottom: 25px;
+}
+body main .left .top-card img{
+    position: absolute;
+    left: 10px;
+    bottom: 35px;
+}
+
+
+body main .left .middel-main .pos-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    }  
+
+body main .left .middel-main .top , body main .left .middel-main .bottom {
+    display: flex;
+    flex-direction: column;
+width: 45%;
+    
+}
+body main .left .middel-main  .pos-botton button{
+    margin: 10px;
+    padding: 6px 0;
+    border-style: none;
+background-color: var(--Verydarkcyan);
+color: var(--White);
+font-size: 23px;
+}
+
+body main .left .middel-main  .pos-botton .bottom {
+    margin-top: 23px;
+}
+body main .left .middel-main  .pos-botton input{
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+body main .left .middel-main .top :nth-child(2){
+    background-color: var(--Strongcyan);
+    color: var(--Verydarkcyan);
+}
+
+body main .left .middel-main  .footer{
+    position: relative;
+}
+body main .left .middel-main  .footer img{
+    position: absolute;
+    left: 10px;
+    bottom: 35px;
+}
+
+body main .right-card {
+    background-color: var(--Verydarkcyan);
+    border-radius: 9px;
+    padding: 20px;
+}
+body main .right-card .TipAmount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+body main .right-card .TipAmount  p{
+    color: var(--White);
+}
+body main .right-card  span{
+    color: var(--Grayishcyan);
+
+}
+
+body main .right-card .Totle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+
+}
+body main .right-card .TipAmount  .price , body main .right-card .Totle  .price{
+    color: var(--Strongcyan);
+}
+body main .right-card .Totle p{
+    color: var(--White);
+}
+body main .right-card button{
+    width: 100%;
+    padding: 9px;
+    border-radius: 7px;
+    background-color: var(--Strongcyan);
+    color: var(--Verydarkcyan);
+    font-size: 17px;
+    font-weight: bold;
+}
+@media (min-width:1000px){
+
+    body header{
+        text-align: center;
+      margin: 80px auto;
+    
+    }
+    body main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+        margin: 0px auto;
+   
+        border-radius: 20px;
+    }
+    body main .left , body main .right-card{
+        width: 45%;
+
+    }
+    body main .right-card button{
+        margin-top: 150px;
+        padding: 15px;
+        
+    }
+    body main .right-card{
+        padding: 40px 50px;
+    }
+    body main .right-card .TipAmount .price ,  body main .right-card .Totle .price{
+       font-size: 40px;
+
+
+    }
+
+    body main .left .middel-main .pos-botton{
+display: block;
+
+    }
+body main .left .middel-main .pos-botton .top , body main .left .middel-main .pos-botton .bottom{
+    flex-direction: row;
+    width: 115%;
+    justify-content: space-between;
+    align-items: center;
+
+}  
+body main .left .middel-main .pos-botton button{
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+
+body main .left .middel-main .pos-botton .bottom input{
+
+width: 215px;
+
+}
+body main .left .middel-main .footer{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+body main .left .middel-main .footer input{
+    width: 115%;
+}
+}
+
+
+
+/*
+
+body main .left .middel-main .pos-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    }  
+
+body main .left .middel-main .top , body main .left .middel-main .bottom {
+    display: flex;
+    flex-direction: column;
+width: 45%;
+    
+}
+
+
+    body main .middel-main .pos-botton .top button, body main .middel-main .pos-botton button{
+         
+        width: 40%;
+border-radius: 5px; 
+
+}
+
+    body main .right-card{
+        width: 50%;
+        height: 400px;
+    }
+*/
